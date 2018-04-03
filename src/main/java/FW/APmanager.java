@@ -16,7 +16,7 @@ public class APmanager {
 
 
     public APmanager(){
-
+        System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
         this.driver = new ChromeDriver();
         this.driver.manage().window().maximize();
 

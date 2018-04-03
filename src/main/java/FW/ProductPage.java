@@ -11,6 +11,7 @@ public class ProductPage extends BaseFW{
 
     public String getProductTitle()
     {
+        manager.wait.implicitlyWait();
         return driver.findElementByXPath(locators.productTitle).getText();
     }
 }

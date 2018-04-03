@@ -9,4 +9,7 @@ public class AllFiltersPageLocators {
     public String buttonShowAll= Manufacturer + "//span[contains(text(),'Показать всё')]/..";
     public String inputEntryField = Manufacturer + "//input[@class=\"input__control\"]";
     public String buttonCollapse = Manufacturer + "//span[contains(text(),'Свернуть')]/..";
+
+    public String checkCheckbox(String label) {return "//label[. ='" + label + "']/..";}
+
 }

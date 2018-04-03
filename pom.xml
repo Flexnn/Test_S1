@@ -7,5 +7,20 @@
     <groupId>groupId</groupId>
     <artifactId>Test_S</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <build>
+    </build>
+    <dependencies>
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>3.11.0</version>
+        </dependency>
 
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>6.14.2</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
 </project>

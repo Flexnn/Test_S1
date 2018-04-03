@@ -5,5 +5,10 @@ public class CatalogPageLocators {
     public String getNumberProductsOnPage = "//div[@data-id]";
     public String goToFilters = "//*[@id=\"search-prepack\"]//a[contains(text(),'Перейти ко всем фильтрам')]";
     public String buttonSearch = "//input[@id=\"header-search\"]/../../../../span/button";
-    public String nameOfTheProductPart2 = "/div[4]/div/div/a";
+
+    public String nameOfTheProductPart(String number){
+        return getNumberProductsOnPage + "[" + number + "]/div[4]/div/div/a";
+
+    }
+
 }

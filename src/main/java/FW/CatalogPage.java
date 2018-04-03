@@ -12,12 +12,8 @@ public class CatalogPage extends BaseFW {
 
     public int getNumberProductsOnPage(){
         //10. Проверить, что элементов на странице 10.
-        try {
-            return driver.findElementsByXPath(locators.getNumberProductsOnPage).size();
-        }
-        catch(Exception e) {
-            return -1;
-        }
+        manager.wait.implicitlyWait();
+        return driver.findElementsByXPath(locators.getNumberProductsOnPage).size();
     }
 
     public void goToFilters() {
@@ -36,6 +32,7 @@ public class CatalogPage extends BaseFW {
 
     public String getNameOfTheProduct(int number)
     {
-        return driver.findElementByXPath(locators.getNumberProductsOnPage + "[" + number + "]" + locators.nameOfTheProductPart2).getText();
+        manager.wait.elementToBeClickable(locators.nameOfTheProductPart(String.valueOf(number)));
+        return driver.findElementByXPath(locators.nameOfTheProductPart(String.valueOf(number))).getText();
     }
 }

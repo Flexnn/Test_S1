@@ -55,6 +55,7 @@ public class Tests extends TestBase{
 //        10. Нажать кнопку Применить.
         app.allFilters.showSuitable();
 //        11. Проверить, что элементов на странице 10.
+//        Проверка не пройдет т.к. на странице меньше 10 элементов
         assert (app.catalog.getNumberProductsOnPage() > 10);
 //        12. Запомнить первый элемент в списке.
         String nameOfTheFirstElement = app.catalog.getNameOfTheProduct(1);
