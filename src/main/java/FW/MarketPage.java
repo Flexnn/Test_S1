@@ -10,12 +10,10 @@ public class MarketPage extends BaseFW {
     }
 
     public void goToMarket() {
-        manager.wait.elementToBeClickable(locators.Market);
         driver.findElementByXPath(locators.Market).click();
     }
 
     public void goToComputers() {
-        manager.wait.elementToBeClickable(locators.computers);
         driver.findElementByXPath(locators.computers).click();
     }
 }

@@ -1,12 +1,9 @@
-package main.java;
-
 import org.testng.annotations.Test;
 
 public class Tests extends TestBase{
 
-
     @Test
-    public void test1() throws InterruptedException {
+    public void Test1() throws InterruptedException {
         //3. Перейти в яндекс маркет
         app.market.goToMarket();
         //4. Выбрать раздел Компьютеры
@@ -36,7 +33,7 @@ public class Tests extends TestBase{
     }
 
     @Test
-    public void test2() throws InterruptedException {
+    public void Test2() throws InterruptedException {
 //        3. Перейти в яндекс маркет
         app.market.goToMarket();
 //        4. Выбрать раздел  Компьютеры

@@ -1,5 +1,3 @@
-package main.java;
-
 import FW.APmanager;
 import org.testng.annotations.*;
 
